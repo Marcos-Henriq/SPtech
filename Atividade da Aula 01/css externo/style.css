@@ -1,0 +1,35 @@
+body {
+    background-color: #1d1d1d;
+}
+
+.divA {
+    background: orange;
+    width: 500px;
+    height: 500px
+}
+
+.divB {
+    background: rgb(31, 180, 136);
+    width: 50%;
+    height: 50%;
+}
+
+.divC {
+    background: #b60b0b;
+    color: #dcdcdc;
+    font-size: 25px;
+    font-family: monospace;
+    font-weight: bold;
+}
+
+.divD {
+    width: 50%;
+    height: 50vh;
+    background-color: rgb(225, 209, 65);
+}
+
+.divE {
+    width: 75vw;
+    height: 50%;
+    background-color: #f35af3;
+}
