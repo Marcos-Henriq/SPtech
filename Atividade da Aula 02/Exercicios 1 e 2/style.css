@@ -1,0 +1,45 @@
+
+/* EXERCICIO 01 */
+
+
+.divA{
+    background-color: red;
+    width: 50px;
+    height: 50px;
+    border: 2px solid green;
+    margin-top: 100px;
+}
+.divB{
+    background-color: #1d1d1d;
+    height: 50vh;
+    width: 50%;
+    border: 10px dashed red;
+    margin-top: 100px;
+    margin-left: 100px;
+}
+
+
+/* EXERCICIO 02 */
+
+h1{
+    margin-top: 100px;
+}
+
+.div-2A{
+    background-color: rgb(174, 43, 226);
+    height: 250px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.div-2B{
+    background-color: #dda0dd;
+    height: 100%;
+    width: 250px;
+    border:dashed 20px red;
+}
+.div-2C{
+    background-color:aquamarine;
+    height: 88%;
+    width: 30%;
+}
