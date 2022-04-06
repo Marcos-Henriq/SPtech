@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Implementando Chart.Js</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        .container {
+            display: flex;
+            width: 100%;
+        }
+
+        div {
+            width: 50%;
+            height: 35vh;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div>
+            <canvas id="myChart"></canvas>
+        </div>
+        <div>
+            <canvas id="myChart2"></canvas>
+        </div>
+    </div>
+</body>
+<script>
+    const labels = [
+        '12:00',
+        '13:00',
+        '14:00',
+        '15:00',
+        '16:00',
+        '17:00',
+    ];
+
+    const data = {
+        labels: labels,
+        datasets: [{
+            label: 'Temperatura média',
+            backgroundColor: 'rgb(255, 99, 132)',
+            borderColor: 'rgb(255, 99, 132)',
+            data: [0, 10, 20, 30, 40, 50, 60, 70, 80, 90],
+            data: {
+                '12:00': 30,
+                '13:00': 29,
+                '14:00': 28,
+                '15:00': 25,
+                '16:00': 22,
+                '17:00': 23
+            }
+        }, {
+            label: 'Umidade média',
+            backgroundColor: '#1b98e0',
+            borderColor: '#1b98e0',
+            data: [0, 10, 20, 30, 40, 50, 60, 70, 80, 90],
+            data: {
+                '12:00': 80,
+                '13:00': 82,
+                '14:00': 80,
+                '15:00': 85,
+                '16:00': 80,
+                '17:00': 83
+            }
+
+        }]
+    };
+
+    const config = {
+        type: 'line',
+        data: data,
+        options: {}
+    };
+
+    const labels2 = [
+        'Janeiro',
+        'Fevereiro',
+        'Março',
+        'Abril',
+        'Maio',
+        'Junho',
+    ];
+
+    const data2 = {
+        labels: labels2,
+        datasets: [{
+            label: 'Temperatura',
+            backgroundColor: 'rgb(255, 99, 132)',
+            borderColor: 'rgb(255, 99, 132)',
+            data: [0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100],
+            data: {
+                Janeiro: 22,
+                Fevereiro: 24,
+                Março: 27,
+                Abril: 23,
+                Maio: 20,
+                Junho: 18
+            }
+        },
+        {
+            label: 'Umidade',
+            backgroundColor: '#1b98e0',
+            borderColor: '#1b98e0',
+            data: [0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100],
+            data: {
+                Janeiro: 90,
+                Fevereiro: 89,
+                Março: 93,
+                Abril: 87,
+                Maio: 88,
+                Junho: 82
+            }
+        }
+        ]
+    };
+    const config2 = {
+        type: 'bar',
+        data: data2,
+        options: {}
+    };
+</script>
+<script>
+    const myChart = new Chart(
+        document.getElementById('myChart'),
+        config
+    );
+    const myChart2 = new Chart(
+        document.getElementById('myChart2'),
+        config2
+    );
+</script>
+
+</html>
