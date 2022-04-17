@@ -1,0 +1,250 @@
+
+.header{
+    color: #32b9cd;
+    border-bottom: 3px solid #32b9cd;
+}
+
+body{
+    margin: 0;
+    background-color: black;
+    font-family: monospace;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+}
+
+.header .container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar{
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    padding: 0;
+    width: 600px;
+    align-items: center;
+    color: #E3b062;
+}
+h1 a{
+    color: #32b9cd;
+    text-decoration: none;
+}
+li a{
+    color: #E3b062;
+    text-decoration: none;
+}
+
+.agora{
+    font-weight: 1000;
+    font-size:15px;
+}
+.banner{
+    margin: 0;
+    height: 500px;
+    background-image: url(./imgs/bg-jelly-fish-para-home.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.banner .container{
+    
+    color: white;
+    height: 100%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner .container p{
+    width: 280px;
+    margin: 0;
+    padding: 0;
+    font-size: 36px;
+}
+.banner span{
+    font-weight: 1000;
+}
+.banner .card-login{
+    padding: 30px 0px;
+    width: 400px;
+    color:#e6005a;
+    background-color: #e5e5e5;
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.card-login h2{
+    font-weight: bold;
+    font-size: 25px;
+}
+.form-box{
+    width: 60%;
+    display:flex;
+    gap: 30px;
+    flex-direction: column;
+    color: #1d1d1d;    
+}
+
+.form-box h4{
+    margin: 0;
+    padding: 0;   
+    color:#e6005a;
+    font-weight:bold;
+    font-size: 18px;
+}
+
+input{
+    width: 100%;
+    height: 30px;
+    border: 2px solid #32b9cd;
+    border-radius: 12px;
+    margin: 0;
+    padding: 0;
+}
+input:focus{
+    outline: 2px solid #3e939e;
+    
+}
+.btn-box{
+    width:70%;
+    display: flex;
+    justify-content:space-between;
+}
+.btn-submit{
+    align-self: center;
+    width: 120px;
+    height: 40px;
+    font-size: 18px;
+    font-family: monospace;
+    border: none;
+    border-radius: 12px;
+    outline: none;
+    cursor: pointer;
+    background-color: #e6005a;
+    color: #f7f7f7;
+    padding: 0px;
+    font-weight: bold;
+}.btn-submit:focus{
+    outline:#c291a4 2px solid;
+}
+.btn-second{
+    width: 120px;
+    height: 40px;
+    border: 3px solid #e6005a;
+    outline: none;
+    cursor: pointer;
+    background-color: white;
+    color: #e6005a;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius:12px;
+    font-family: monospace;
+}
+
+/* FOOTER */
+
+.footer{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #32b9cd;
+}
+.footer p {
+    color: #f7f7f7;
+    font-size: 18px;
+}
+
+/* MAIN */
+
+
+.main{
+    height: 450px;
+    background-color:#e5e5e5;
+}
+.main .container{
+    height: 450px;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+}
+
+.card-valores{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.card-valores h4{
+    color: #e6005a;
+    font-weight: bold;
+    font-size: 20px;
+}
+.card-valores p{
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    color: #505050;
+    font-weight: bold;
+}
+.card-valores img{
+    width:150px;
+}
+
+/* EQUIPE */
+
+.equipe{
+    height: 800px;
+    display: flex;
+    align-items: center;
+}
+
+.equipe .container{
+    display: flex;
+    justify-content: center;
+    flex-wrap:wrap;
+    height: 750px;
+}
+.container .card-equipe{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.card-equipe img{
+    width: 200px; 
+}
+.card-equipe p{
+    text-align: center;
+    color: #E3b062;
+    font-size: 18px;
+}
+.equipe h1{
+    width: 100%;
+    color: #32b9cd;
+    text-align: center;
+}
+
+.div-btn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.btn-contato{
+    width:250px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: #e6005a;
+    border-radius: 12px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}

@@ -1,0 +1,58 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color:black;
+    font-family: monospace;
+
+}
+
+/* HEADER / CABEÇALHO */
+
+.header{
+    width: 100%;
+    color: #32b9cd;
+    border-bottom: 3px solid #32b9cd;
+    padding: 0px 50px;
+    
+}
+
+.header .container{
+    width:80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header .container .navbar{
+    width: 50%;
+    color:#e3b062;
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+}
+.container .navbar .active{
+    color:#e3b062;
+    font-weight: 1000;
+    opacity: 0.7;
+}
+.header h1{
+    width: 20%;
+}
+.banner{
+    width: 100%;
+    height: 90vh;
+    background-image: url(./assets/4161278.webp);
+    background: #1d1d1d;
+    background-repeat: no repeat;
+    background-position: center;
+    color: #32b9cd;
+    font-size: 50px;
+}
+.banner .content{
+    position:absolute;
+    top: 40%;
+    left: 10%;
+}
