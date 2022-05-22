@@ -27,18 +27,22 @@ body {
 }
 
 .container-crosswords {
-    width: 600px;
+    width: 480px;
     display: flex;
     flex-wrap: wrap;
 
 }
 
+
+
 .inputWords {
     width: 30px;
     height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.inputActive {}
 
 
 
